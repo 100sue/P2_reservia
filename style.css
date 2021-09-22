@@ -1,0 +1,71 @@
+body {
+    font-family: "Raleway", sans-serif ;
+    margin: 0;
+}
+
+/* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    margin: 0 10px 0 20px;
+}
+
+/*main*/
+
+
+#slogan {
+    font-size: 13px;
+
+}
+#lieu {
+    font-size: 12px;
+    opacity: 0.8;
+}
+#recherche {
+   width: 100%;
+}
+#recherche-formulaire {
+    display: flex;
+
+}
+#recherche img {
+    width: 20px;
+    border: solid 1px;
+    background-color: #F2F2F2;
+    align-items: center;
+    border-radius: 2px 0 0 2px;
+}
+input {
+    height: 40px;
+    display: inline-block;
+    font-size: 13px;
+}
+.boutton {
+    color: white;
+    text-decoration: none;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0 ;
+}
+
+
+
+
+#filtres {
+    display: flex;
+}
+.filtres {
+   display: flex;
+   align-items: center;
+   
+}
