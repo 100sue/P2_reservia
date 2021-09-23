@@ -10,7 +10,8 @@ nav {
     align-items: center;
 }
 nav img {
-    height: 60px;
+    height: 50px;
+    width: 120px;
 }
 
 nav ul {
@@ -21,6 +22,7 @@ nav ul {
 nav li {
     margin: 0 10px 0 20px;
 }
+
 nav li:hover {
     color:black;
 }
@@ -74,23 +76,25 @@ input {
    align-items: center;
    
 }
+.etoile {
+    color: blue;
+}
 
 
 /*footer*/
 footer {
     background-color: #F2F2F2;
-    display: flex;
-    justify-content: center;
-
+    height: 300px;
+    margin-top: 100px;
 }
 #footer-items {
     display: flex;
+    justify-content: space-between;
 
 }
 .footer-items {
+    width: 100%;
     
-    
-
 }
 .footer-items h3 {
     font-size: 13px;
