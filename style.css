@@ -1,5 +1,5 @@
 body {
-    font-family: "Raleway", sans-serif ;
+    font-family: "Raleway", sans-serif;
     margin: 0;
 }
 
@@ -16,10 +16,15 @@ nav img {
 nav ul {
     display: flex;
     list-style: none;
+    color:#0065FC ;
 }
 nav li {
     margin: 0 10px 0 20px;
 }
+nav li:hover {
+    color:black;
+}
+
 
 /*main*/
 
@@ -68,4 +73,32 @@ input {
    display: flex;
    align-items: center;
    
+}
+
+
+/*footer*/
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+
+}
+#footer-items {
+    display: flex;
+
+}
+.footer-items {
+    
+    
+
+}
+.footer-items h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
+.footer-items li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.7;
 }
