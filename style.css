@@ -22,14 +22,13 @@ nav ul {
 }
 nav li {
     margin: 0 10px 0 20px;
-}
-.heber {
-    border-top: solid 1px;
+    border-top: solid 1px transparent;
 }
 
 nav li:hover {
     color:black;
-    border-top: none;
+    border-top: solid 1px #0065FC;
+    cursor: pointer;
 }
 
 
