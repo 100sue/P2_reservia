@@ -1,6 +1,7 @@
 body {
     font-family: "Raleway", sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 /* header */
@@ -22,9 +23,13 @@ nav ul {
 nav li {
     margin: 0 10px 0 20px;
 }
+.heber {
+    border-top: solid 1px;
+}
 
 nav li:hover {
     color:black;
+    border-top: none;
 }
 
 
@@ -32,18 +37,22 @@ nav li:hover {
 
 
 #slogan {
-    font-size: 13px;
+    font-size: 9px;
+    font-weight: 700;
 
 }
 #lieu {
     font-size: 12px;
-    opacity: 0.8;
+    line-height: 10px;
+    opacity: 0.6;
 }
 #recherche {
    width: 100%;
+
 }
 #recherche-formulaire {
     display: flex;
+    width: 55%;
 
 }
 #recherche img {
@@ -51,7 +60,7 @@ nav li:hover {
     border: solid 1px;
     background-color: #F2F2F2;
     align-items: center;
-    border-radius: 2px 0 0 2px;
+    border-radius: 3px 0 0 3px;
 }
 input {
     height: 40px;
@@ -74,10 +83,18 @@ input {
 .filtres {
    display: flex;
    align-items: center;
+   width: 10%;
    
 }
+.info {
+    display: flex;
+    font-size: 12px;
+    color: black ;
+    opacity: 0.6;
+}
+
 .etoile {
-    color: blue;
+    color:#0065FC ;
 }
 
 
