@@ -78,11 +78,13 @@ input {
 
 #filtres {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
 }
 .filtres {
    display: flex;
    align-items: center;
-   width: 10%;
    
 }
 .info {
