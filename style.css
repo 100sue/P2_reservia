@@ -85,12 +85,12 @@ input {
     display: flex;
     justify-content: space-between 50px;
     align-items: center;
-    width: 100%;
     margin-top: 50px;
     margin-bottom: 40px;
 }
 #filtres p {
     margin-right: 20px;
+    font-weight: 700;
 }
 .varieté-filtres {
    display: flex;
@@ -101,14 +101,19 @@ input {
     color: #0065fc;
     background-color: #DEEBFF;
     border-radius: 30px;
-   width: 52px;
-   height: 52px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-left: -2px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
+.varieté-filtres i:hover {
+    color: white;
+    background-color: #0065FC;
+}
+
 .varieté-filtres p {
     border: solid 2px #F2F2F2;
     height: 50px;
@@ -118,16 +123,23 @@ input {
     padding-left: 20px;
     display: flex;
     justify-content: center;
-   align-items: center;
+    align-items: center;
 
 }
-
+.varieté-filtres p:hover {
+    color: #0065FC;
+}
 
 .info {
     display: flex;
     font-size: 12px;
     color: black ;
     opacity: 0.6;
+}
+.info i {
+    color: #0065FC;
+
+
 }
 
 /*Main*/
