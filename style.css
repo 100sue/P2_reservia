@@ -51,12 +51,9 @@ nav li:hover {
 }
 #recherche {
    width: 100%;
-
 }
 #recherche-formulaire {
-    display: flex;
-    
-
+    display: flex; 
 }
 #recherche img {
     width: 20px;
@@ -66,12 +63,11 @@ nav li:hover {
     border-radius: 10px 0 0 10px;
     padding: 10px;
 }
-input {
+#recherche input {
     height: 50px;
     border: solid 1px #DEEBFF;
     display: inline-block;
     font-size: 15px;
-   
 }
 .boutton {
     height: 50px;
@@ -81,7 +77,6 @@ input {
     background-color: #0065FC;
     border-radius: 0 10px 10px 0 ;
     padding: 19px;
-    
 }
 
 /*filtres*/
@@ -115,19 +110,19 @@ input {
     justify-content: center;
     align-items: center;
     margin: -3px;
-
-
 }
-.varieté-filtres i:hover {
-    color: white;
-    background-color: #0065FC;
-}
-
 .varieté-filtres p {
     font-weight: bold;
     padding: 1rem;
 
 }
+/*animation au survol des filtres*/
+
+.varieté-filtres i:hover {
+    color: white;
+    background-color: #0065FC;
+}
+
 .varieté-filtres p:hover {
     color: #0065FC;
     transform: scale(1.02);
@@ -158,45 +153,38 @@ input {
 
 /*Main*/
 
+/*hebergements*/
+
+.liste-hebergements {
+   display: flex;
+   gap: 1rem;
+
+}
+.liste-hebergements div {
+    border: solid 1px;
+    background-color: #F2F2F2;
+
+}
+.liste-hebergements .hebergement {
+  flex-basis: 66%;
+
+}
+.liste-hebergements .populaires {
+    flex-basis: 33%;
+}
+/* responsive en attente
+@media (max-witdh:800px) {
+    .liste-hebergements {
+        flex-direction: column;
+    }
+    .popular {
+        order: -1;
+    }
+}
+*/
 
 .etoile {
     color:#0065FC ;
-}
-
-
-/*hebergements*/
-main {
-  display: flex;
-  justify-content: space-around 10px;
-  align-items: center;
-
-}
-
-#titre-hebergements {
-    flex: 2;
-    height: 650px;
-    margin-right: 20px;
-    border-radius: 10px;
-    background-color: rgb(150, 150, 168);
-
-}
-
-#populaires {
-    flex: 1;
-    height: 650px;
-    background-color: blue;
-    border-radius: 10px;
-    margin-left: 20px;
-
-}
-
-.img-hebergement1 {
-    background-image: url(./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 120px;
 }
 
 
