@@ -160,18 +160,42 @@ nav li:hover {
    gap: 1rem;
 
 }
-.liste-hebergements div {
+.liste-hebergements > div {
     border: solid 1px;
     background-color: #F2F2F2;
+    padding: 1rem;
+    border-radius: 1rem;
 
 }
-.liste-hebergements .hebergement {
+.hebergements {
   flex-basis: 66%;
 
 }
-.liste-hebergements .populaires {
+.liste-hebergements a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.populaires {
     flex-basis: 33%;
 }
+
+.liste-appartements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    align-content: center;
+    box-sizing: border-box;
+}
+.liste-appartements div {
+    border: solid 1px red;
+    flex-basis: 33%;
+   
+
+
+}
+
 /* responsive en attente
 @media (max-witdh:800px) {
     .liste-hebergements {
@@ -183,8 +207,24 @@ nav li:hover {
 }
 */
 
+.carte-appartement  {
+    background-color:white;
+    border: solid 1px #F2F2F2;
+    padding: 0.5rem;
+
+}
+.carte-appartement img {
+    border-radius: 1rem 1rem 0 0;
+    height: 10rem;
+}
+
+/*couleur des étoiles*/
+
 .etoile {
     color:#0065FC ;
+}
+.gris {
+    color: #b3b9c4;
 }
 
 
