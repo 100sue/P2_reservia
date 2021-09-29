@@ -201,17 +201,6 @@ nav li:hover {
 
 }
 
-/* responsive en attente
-@media (max-witdh:800px) {
-    .liste-hebergements {
-        flex-direction: column;
-    }
-    .popular {
-        order: -1;
-    }
-}
-*/
-
 .carte-appartement  {
     background-color:white;
     border: solid 1px #F2F2F2;
@@ -223,6 +212,7 @@ nav li:hover {
 .carte-appartement img {
     border-radius: 1rem 1rem 0 0;
     height: 10rem;
+    object-fit: cover;
 }
 
    /*couleur des étoiles*/
@@ -236,18 +226,59 @@ nav li:hover {
 
    /*Block populaires*/
 
-.liste-hebergements .populaires {
+.populaires {
     display: flex;
     flex-direction: column;
 
 }
-.liste-hebergements .populaires div {
-    border: solid 1px #0065FC;
+
+.liste-populaire-appartement {
+    border: solid 1px #DEEBFF;
+    background-color: #F2F2F2;
+    padding: 1rem;
+    border-radius: 1rem;
+    
 }
+
+.carte-appartement-populaire {
+    background-color:white;
+    border: solid 1px #F2F2F2;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #0000002e;
+
+}
+.carte-appartement-populaire img {
+    border-radius: 1rem 0 0 1rem;
+    height: 10rem;
+    object-fit: cover;
+
+}
+
 
      /*Block Activités*/
 
+#titre-activites {
+    margin-top: 2rem;
 
+}
+.activites-marseille {
+    display: flex;
+}
+
+.carte-activite {
+    border: solid 1px #F2F2F2;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+}
+.carte-activite img {
+    border-radius: 1rem 1rem 0 0;
+    height: 10rem;
+    object-fit: cover;
+
+
+}
 /*footer*/
 footer {
     background-color: #F2F2F2;
