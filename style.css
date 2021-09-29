@@ -4,6 +4,7 @@ body {
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -12,6 +13,9 @@ h1 {
 
 
 /* Header */
+
+    /*Navbar*/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -37,23 +41,25 @@ nav li:hover {
     border-top: solid 1px #0065FC;
     cursor: pointer;
 }
+
 #slogan {
     font-size: 9px;
     font-weight: 700;
-
 }
 
-/*recherche*/
 #lieu {
     font-size: 12px;
     line-height: 10px;
     opacity: 0.6;
 }
+
+ /*recherche*/
 #recherche {
    width: 100%;
 }
-#recherche-formulaire {
+.recherche-formulaire {
     display: flex; 
+   
 }
 #recherche img {
     width: 20px;
@@ -77,9 +83,10 @@ nav li:hover {
     background-color: #0065FC;
     border-radius: 0 10px 10px 0 ;
     padding: 19px;
+    margin-right: 20px;
 }
 
-/*filtres*/
+      /*filtres*/
 
 #filtres {
     display: flex;
@@ -116,7 +123,7 @@ nav li:hover {
     padding: 1rem;
 
 }
-/*animation au survol des filtres*/
+      /*animation au survol des filtres*/
 
 .varieté-filtres i:hover {
     color: white;
@@ -125,7 +132,7 @@ nav li:hover {
 
 .varieté-filtres p:hover {
     color: #0065FC;
-    transform: scale(1.02);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -153,7 +160,7 @@ nav li:hover {
 
 /*Main*/
 
-     /*Block hebergements*/
+     /*Block hébergements*/
 
 .liste-hebergements {
    display: flex;
@@ -210,6 +217,7 @@ nav li:hover {
     border: solid 1px #F2F2F2;
     padding: 0.5rem;
     border-radius: 1rem;
+    box-shadow: 0 0 16px #0000002e;
 
 }
 .carte-appartement img {
@@ -227,6 +235,7 @@ nav li:hover {
 }
 
    /*Block populaires*/
+
 .liste-hebergements .populaires {
     display: flex;
     flex-direction: column;
@@ -235,6 +244,9 @@ nav li:hover {
 .liste-hebergements .populaires div {
     border: solid 1px #0065FC;
 }
+
+     /*Block Activités*/
+
 
 /*footer*/
 footer {
