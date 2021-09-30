@@ -160,11 +160,11 @@ nav li:hover {
 
 /*Main*/
 
-     /*Block hébergements*/
+/*Block hébergements*/
 
 .liste-hebergements {
    display: flex;
-   gap: 1rem;
+   gap: 4rem;
 
 }
 .liste-hebergements > div {
@@ -172,10 +172,13 @@ nav li:hover {
     background-color: #F2F2F2;
     padding: 1rem;
     border-radius: 1rem;
+    transform: scale(1.05);
+    cursor: pointer;
 
 }
 .hebergements {
   flex-basis: 66%;
+  
 
 }
 .liste-hebergements a {
@@ -209,10 +212,12 @@ nav li:hover {
     box-shadow: 0 0 16px #0000002e;
 
 }
+
 .carte-appartement img {
     border-radius: 1rem 1rem 0 0;
     height: 10rem;
     object-fit: cover;
+    object-position: top;
 }
 
    /*couleur des étoiles*/
@@ -224,19 +229,21 @@ nav li:hover {
     color: #b3b9c4;
 }
 
-   /*Block populaires*/
+  
+/*Block populaires*/
 
 .populaires {
     display: flex;
     flex-direction: column;
+   
 
 }
 
 .liste-populaire-appartement {
-    border: solid 1px #DEEBFF;
     background-color: #F2F2F2;
     padding: 1rem;
     border-radius: 1rem;
+    
     
 }
 
@@ -246,13 +253,25 @@ nav li:hover {
     padding: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
+    display: flex;
+   
 
 }
 .carte-appartement-populaire img {
     border-radius: 1rem 0 0 1rem;
-    height: 10rem;
+    height: 8rem;
+    width: 100%;
     object-fit: cover;
+    
 
+}
+.populaire-description {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.populaire-description h3 {
+    margin-bottom: auto;
 }
 
 
