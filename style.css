@@ -1,5 +1,12 @@
 /*General*/
 
+:root {
+    --bleu: #0065fc;
+    --bleu-clair: #DEEBFF;
+    --bg-gris: #F2F2F2;
+    
+}
+
 body {
     font-family: "Raleway", sans-serif;
     margin: 0;
@@ -41,12 +48,12 @@ nav li {
 
 }
 nav li a {
-    color: #0065FC;
+    color: var(--bleu) ;
 }
 
 nav li:hover {
     color:#000;
-    border-top: solid 1px #0065FC;
+    border-top: solid 1px var(--bleu);
     cursor: pointer;
 }
 
@@ -71,15 +78,15 @@ nav li:hover {
 }
 #recherche img {
     width: 20px;
-    border: solid 1px #DEEBFF;
-    background-color: #F2F2F2;
+    border: solid 1px var(--bleu-clair);
+    background-color: var(--bg-gris);
     align-items: center;
     border-radius: 10px 0 0 10px;
     padding: 10px;
 }
 #recherche input {
     height: 50px;
-    border: solid 1px #DEEBFF;
+    border: solid 1px var(--bg-gris);
     display: inline-block;
     font-size: 15px;
 }
@@ -88,7 +95,7 @@ nav li:hover {
     width: 120px;
     color: white;
     text-decoration: none;
-    background-color: #0065FC;
+    background-color: var(--bleu);
     border-radius: 0 10px 10px 0 ;
     padding: 19px;
     margin-right: 20px;
@@ -110,14 +117,14 @@ nav li:hover {
 .varieté-filtres {
    display: flex;
    align-items: center;
-   border: solid 2px #DEEBFF;
+   border: solid 2px var(--bleu-clair);
    border-radius: 50px;
    height: 45px;
    
 }
 .varieté-filtres i {
-    color: #0065fc;
-    background-color: #DEEBFF;
+    color: var(--bleu);
+    background-color: var(--bleu-clair);
     border-radius: 30px;
     width: 50px;
     height: 50px;
@@ -135,11 +142,11 @@ nav li:hover {
 
 .varieté-filtres i:hover {
     color: white;
-    background-color: #0065FC;
+    background-color: var(--bleu);
 }
 
 .varieté-filtres p:hover {
-    color: #0065FC;
+    color: var(--bleu);
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -155,13 +162,13 @@ nav li:hover {
 .info i {
    width: 20px;
    height: 20px;
-   border: solid 2px #F2F2F2;
+   border: solid 2px var(--bg-gris);
    border-radius: 25px;
    margin-right: 5px;
    display: flex;
    justify-content: center;
    align-items: center;
-   color: #0065FC;
+   color: var(--bleu);
 
 
 }
@@ -173,14 +180,14 @@ nav li:hover {
 .liste-hebergements {
    display: flex;
    gap: 4rem;
+   
 
 }
 .liste-hebergements > div {
-    border: solid 1px #DEEBFF;
-    background-color: #F2F2F2;
+    border: solid 1px var(--bleu-clair);
+    background-color: var(--bg-gris);
     padding: 1rem;
     border-radius: 1rem;
-    transform: scale(1.05);
     cursor: pointer;
     
 
@@ -217,7 +224,7 @@ nav li:hover {
 
 .carte-appartement  {
     background-color:white;
-    border: solid 1px #F2F2F2;
+    border: solid 1px var(--bg-gris);
     padding: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
@@ -234,7 +241,7 @@ nav li:hover {
    /*couleur des étoiles*/
 
 .etoile {
-    color:#0065FC ;
+    color:var(--bleu) ;
 }
 .gris {
     color: #b3b9c4;
@@ -254,7 +261,7 @@ nav li:hover {
 }
 
 .liste-populaire-appartement {
-    background-color: #F2F2F2;
+    background-color: var(--bg-gris);
     padding: 1rem;
     border-radius: 1rem;
     
@@ -263,7 +270,7 @@ nav li:hover {
 
 .carte-appartement-populaire {
     background-color:white;
-    border: solid 1px #F2F2F2;
+    border: solid 1px var(--bg-gris);
     padding: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
@@ -293,6 +300,7 @@ nav li:hover {
 
 #titre-activites {
     margin-top: 5rem;
+    width: 100%;
 
 }
 .activites-marseille {
@@ -300,7 +308,7 @@ nav li:hover {
 }
 
 .carte-activite {
-    border: solid 1px #F2F2F2;
+    border: solid 1px var(--bg-gris);
     padding: 0.5rem;
     border-radius: 1rem;
 
@@ -314,7 +322,7 @@ nav li:hover {
 }
 /*footer*/
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--bg-gris);
     height: 200px;
     margin-top: 100px;
 }
