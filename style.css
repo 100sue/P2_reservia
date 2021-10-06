@@ -68,13 +68,15 @@ nav li:hover {
     opacity: 0.6;
 }
 
- /*recherche*/
+  
+/*recherche*/
+
+
 #recherche {
    width: 100%;
 }
 .recherche-formulaire {
     display: flex; 
-   
 }
 #recherche img {
     width: 20px;
@@ -169,8 +171,6 @@ nav li:hover {
    justify-content: center;
    align-items: center;
    color: var(--bleu);
-
-
 }
 
 /*Main*/
@@ -179,27 +179,22 @@ nav li:hover {
 
 .liste-hebergements {
    display: flex;
-   gap: 4rem;
+   gap: 2rem;
    
-   
-
 }
 .liste-hebergements > div {
     border: solid 1px var(--bleu-clair);
     background-color: var(--bg-gris);
+    height: 100%;
+    width: 100%;
     padding: 1rem;
     border-radius: 1rem;
-    cursor: pointer;
-    
-    
 
 }
 .hebergements {
   flex-basis: 66%;
   margin-left: 1rem;
   
-  
-
 }
 .liste-hebergements a {
     font-weight: bold;
@@ -256,24 +251,22 @@ nav li:hover {
 .populaires {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    
-    
-   
-
 }
-
+.icone-populaire {
+    display: flex;
+    justify-content: space-between;
+}
 .liste-populaire-appartement {
     background-color: var(--bg-gris);
     padding: 1rem;
     border-radius: 1rem;
-    
-    
+    width: 100%;
 }
 
 .carte-appartement-populaire {
     background-color:white;
     border: solid 1px var(--bg-gris);
+    width: 100%;
     padding: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
@@ -283,11 +276,10 @@ nav li:hover {
 }
 .carte-appartement-populaire img {
     border-radius: 1rem 0 0 1rem;
-    height: 8rem;
+    height: 10rem;
     width: 100%;
     object-fit: cover;
     
-
 }
 .populaire-description {
     flex-basis: 100%;
