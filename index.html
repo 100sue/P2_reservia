@@ -17,12 +17,12 @@
 
     <header>
         <nav>
-            <img src="./images/logo/Reservia@3x.png" alt="logo reservia">
-            <ul>
-                <li><a href="#ancre-hebergements">Hébergements</a></li>
-                <li><a href="#ancre-activites">Activités</a> </li>
-                <li> <a href="#">S'inscrire</a></li>
-            </ul>
+            <img id="logo" src="./images/logo/Reservia@3x.png" alt="logo reservia">
+            <div class="sub-nav">
+                <a href="#ancre-hebergements">Hébergements</a>
+                <a href="#ancre-activites">Activités</a>
+            </div>
+                <a class="sinscrire" href="#">S'inscrire</a>
         </nav>
         <div id="slogan">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -34,6 +34,7 @@
                 <form action="#" method="post">
                     <input placeholder="Marseille, France" name="name" type="text">
                     <a class="boutton" href="#">Rechercher</a>
+                    <i class="fas fa-search" ></i>
                 </form>
             </div>
             <div id="filtres">

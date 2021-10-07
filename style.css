@@ -30,27 +30,61 @@ a {
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-nav img {
-    height: 50px;
-    width: 120px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
-nav ul {
+nav a {
+    padding: 2rem;
+    border-top: 2px solid transparent;
+}
+
+nav a:hover {
+    border-top-color: var(--bleu) ;
+}
+
+#logo {
+    margin-right: auto;
+    height: 2.8rem;
+    padding: 0 2rem;
+}
+
+.sinscrire {
+    font-weight: 600;
+    color: var(--bleu);
+}
+
+.sub-nav {
     display: flex;
-    list-style: none;
-    
-}
-nav li {
-    margin: 0 10px 0 20px;
-    border-top: solid 1px transparent;
 }
 
-nav li a {
-    color: var(--bleu) ;
+.sub-nav a:hover {
+    color: var(--bleu);
 }
+
+
+@media (max-width: 800px) {
+    .sub-nav {
+        order: 1;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .sub-nav a {
+        flex-basis: 50%;
+        border-bottom: 2px solid var(--bg-gris);
+    }
+    .sub-nav a:hover {
+        border-bottom-color: var(--bleu);
+        border-top-color: transparent;
+    }
+
+}
+    
+
+
+
+
 
 #slogan {
     font-size: 9px;
@@ -311,7 +345,7 @@ nav li:hover {
     color: #b3b9c4;
 }
 
-/*animation au survol des cartes*/
+/*Animation au survol des cartes*/
 
 .liste-appartements p:hover {
     transform: scale(1.05);
