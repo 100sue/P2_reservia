@@ -23,12 +23,420 @@ a {
     text-decoration: none;
 }
 
+ /*couleur des étoiles*/
+
+ .etoile {
+    color:var(--bleu) ;
+}
+.gris {
+    color: #b3b9c4;
+}
+
 
 /* Header */
 
     /*Navbar*/
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    height: 50px;
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+nav li {
+    margin: 0 10px 0 20px;
+    border-top: solid 1px transparent;
+
+}
+nav li a {
+    color: var(--bleu) ;
+}
+
+nav li:hover {
+    color:#000;
+    border-top: solid 1px var(--bleu);
+    cursor: pointer;
+}
+
+#slogan {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+#lieu {
+    font-size: 12px;
+    line-height: 10px;
+    opacity: 0.6;
+}
+
+ /*Recherche*/
+
+#recherche {
+   width: 100%;
+}
+
+.recherche-formulaire {
+    display: flex; 
+}
+
+#recherche img {
+    width: 20px;
+    border: solid 1px var(--bleu-clair);
+    background-color: var(--bg-gris);
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+}
+
+#recherche input {
+    height: 50px;
+    border: solid 1px var(--bg-gris);
+    display: inline-block;
+    font-size: 15px;
+}
+
+.boutton {
+    height: 50px;
+    width: 120px;
+    color: white;
+    text-decoration: none;
+    background-color: var(--bleu);
+    border-radius: 0 10px 10px 0 ;
+    padding: 19px;
+    margin-right: 20px;
+}
+.boutton:hover {
+    background-color: blue;
+    
+}
+
+      /*filtres*/
+
+#filtres {
+        display: flex;
+        gap:  1rem;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+}
+
+#filtres p {
+        margin-right: 20px;
+        font-weight: bold;
+}
+
+.varieté-filtres {
+       display: flex;
+       align-items: center;
+       border: solid 2px var(--bleu-clair);
+       border-radius: 50px;
+       height: 45px;     
+}
+
+.varieté-filtres i {
+        color: var(--bleu);
+        background-color: var(--bleu-clair);
+        border-radius: 30px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -3px;
+}
+
+.varieté-filtres p {
+        font-weight: bold;
+        padding: 1rem;
+    
+}
+
+/*animation au survol des filtres*/
+
+.varieté-filtres i:hover {
+        color: white;
+        background-color: var(--bleu);
+}
+    
+.varieté-filtres p:hover {
+        color: var(--bleu);
+        transform: scale(1.05);
+        cursor: pointer;
+}
+    
+.info {
+        display: flex;
+        font-size: 12px;
+        color: black ;
+        opacity: 0.6;
+        margin-bottom: 40px;    
+}
+
+.info i {
+       width: 20px;
+       height: 20px;
+       border: solid 2px var(--bg-gris);
+       border-radius: 25px;
+       margin-right: 5px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: var(--bleu);
+}
+
+
+/*Main*/
+
+
+/*Section : Hébergements*/
+
+
+.liste-hebergements {
+    display: flex;  
+}
+
+.hebergements {
+    border: solid 1px var(--bleu-clair);
+    background-color: var(--bg-gris);
+    width: 66%;
+    margin-right: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+
+.liste-appartements {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+    /*Hébergements : Carte des appartements*/
+
+.carte-appartement {
+    background-color:white;
+    border: solid 1px var(--bg-gris);
+    height: 100%;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
+    flex-grow: 1;
+}
+.carte-appartement img {
+    height: 10rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    
+}
+.carte-appartement h3 {
+    margin: 0.5rem;
+}
+.carte-appartement p {
+    margin: 0.5rem;
+}
+
+/*Section : Populaires*/
+
+.populaires {
+    border: solid 1px var(--bleu-clair);
+    background-color: var(--bg-gris);
+    width: 33%;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+
+/*Section : Populaires*/
+
+.liste-populaire-appartement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 10px ;
+    align-items: center; 
+    padding: 1rem;
+} 
+.icone-populaire {
+    display: flex;
+    justify-content: space-between;      
+}
+
+  /*Populaires : Cartes des appartements*/
+
+.conteneur-carte {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.populaire-photo {
+    width: 33%;     
+}
+
+.populaire-description {
+    display: flex;
+    flex-direction: column; 
+    flex-basis: 100%; 
+}
+
+
+
+
+
+/*Section : Activités*/
+
+#ancre-activites {
+     margin-top: 5rem;
+    width: 100%;
+}
+.activites {
+    border: solid 1px var(--bleu-clair);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.activites-marseille {
+    display: flex;
+}
+
+    /*Activités : Cartes des activités*/
+
+
+.carte-activite-vieux-port {
+    border: solid 1px var(--bg-gris);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.carte-activite-vieux-port img {
+    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+    
+.carte-activite-fort-pomegues {
+    border: solid 1px var(--bg-gris);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.carte-activite-fort-pomegues img {
+    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carte-activite-iles-frioul {
+    border: solid 1px var(--bg-gris);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.carte-activite-iles-frioul img {
+    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carte-activite-parc-des-calanques {
+    border: solid 1px var(--bg-gris);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.carte-activite-parc-des-calanques img {
+    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carte-activite-notre-dame-de-la-garde {
+    border: solid 1px var(--bg-gris);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.carte-activite-notre-dame-de-la-garde img {
+    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carte-activite-parc-longchamp {
+    border: solid 1px var(--bg-gris);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.carte-activite-parc-longchamp img {
+    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*footer*/
+
+
+ footer {
+        background-color: var(--bg-gris);
+        height: 200px;
+        margin-top: 100px;
+}
+
+#footer-items {
+        display: flex;
+        justify-content: space-between;
+}
+
+.footer-items {
+        width: 100%; 
+           
+}
+
+.footer-items h3 {
+        font-size: 16px;
+        font-weight: 700;
+        
+}
+
+.footer-items li {
+        list-style: none;
+        font-size: 12px;
+        font-weight: 700;
+        opacity: 0.7;
+        
+}
+
+
+/*info en attente
+   
+Navbar
+
+   nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -59,7 +467,7 @@ nav a:hover {
     display: flex;
 }
 
-   /*animation au survol des liens de la nav*/
+   /*animation au survol des liens de la nav
 
 .sub-nav a:hover {
     color: var(--bleu);
@@ -83,47 +491,8 @@ nav a:hover {
     }
 
 }
-   
- /*Recherche*/
 
-.recherche {
-    width: 100%;
-
-}
-
- .recherche img {
-    width: 20px;
-    border: solid 1px var(--bleu-clair);
-    background-color: var(--bg-gris);
-    align-items: center;
-    border-radius: 10px 0 0 10px;
-    padding: 10px;
-}
-
-.recherche input {
-    height: 50px;
-    border: solid 1px var(--bg-gris);
-    display: inline-block;
-    font-size: 15px;
-}
-
-.boutton {
-    height: 50px;
-    width: 120px;
-    color: white;
-    text-decoration: none;
-    background-color: var(--bleu);
-    border-radius: 0 10px 10px 0 ;
-    padding: 19px;
-    margin-right: 20px;
-}
-.recherche-formulaire {
-    display: flex;
-}
-
-
- /*
- .recherche h1{
+.recherche h1{
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -159,490 +528,11 @@ nav a:hover {
     border-radius: 0 1rem 1rem 0;
     border: none;
     cursor: pointer;
-}*/
-
-
-/*filtres*/
-
-#filtres {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-#filtres p {
-    margin-right: 20px;
-    font-weight: bold;
-}
-.varieté-filtres {
-    border:  2px solid var(--bg-gris);
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-}
-
-.varieté-filtres i {
-    color: var(--bleu);
-    background-color: var(--bleu-clair);
-    border-radius: 30px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -3px;
-}
-
-
-.varieté-filtres p {
-    font-weight: bold;
-    padding: 0 1rem;
-
-
 }
 
 
 
-#recherche img {
-    width: 20px;
-    border: solid 1px var(--bleu-clair);
-    background-color: var(--bg-gris);
-    align-items: center;
-    border-radius: 10px 0 0 10px;
-    padding: 10px;
-}
-
-#recherche input {
-    height: 50px;
-    border: solid 1px var(--bg-gris);
-    display: inline-block;
-    font-size: 15px;
-}
-
-.boutton {
-    height: 50px;
-    width: 120px;
-    color: white;
-    text-decoration: none;
-    background-color: var(--bleu);
-    border-radius: 0 10px 10px 0 ;
-    padding: 19px;
-    margin-right: 20px;
-}
 
 
-
-.info {
-    display: flex;
-    font-size: 12px;
-    color: black ;
-    opacity: 0.6;
-    margin-bottom: 40px;    
-}
-
-.info i {
-   width: 20px;
-   height: 20px;
-   border: solid 2px var(--bg-gris);
-   border-radius: 25px;
-   margin-right: 5px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: var(--bleu);
-}
-
-/*animation au survol des filtres*/
-
-.varieté-filtres i:hover {
-        color: white;
-        background-color: var(--bleu);
-}
-    
-.varieté-filtres p:hover {
-        color: var(--bleu);
-        transform: scale(1.05);
-        cursor: pointer;
-}
-    
-
-
-
-/*Main*/
-
-
-/*Section : Hébergements*/
-
-.liste-hebergements {
-    display: flex;  
-}
-.hebergements {
-    border: solid 1px var(--bleu-clair);
-    background-color: var(--bg-gris);
-    width: 66%;
-    margin-right: 20px;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-.liste-appartements {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-    /*Hébergements : Carte des appartements*/
-
-.carte-appartement-la-cannebiere {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 300px;
-    width: 280px;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.carte-appartement-la-cannebiere img {
-    height: 10rem;
-    border-radius: 15px 15px 0 0;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-.carte-appartement-hotel-du-port {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 300px;
-    width: 280px;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.carte-appartement-hotel-du-port img {
-    height: 10rem;
-    border-radius: 15px 15px 0 0;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-.carte-appartement-hotel-les-mouettes {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 300px;
-    width: 280px;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.carte-appartement-hotel-les-mouettes img {
-    height: 10rem;
-    border-radius: 15px 15px 0 0;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-.carte-appartement-hotel-de-la-mer {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 300px;
-    width: 280px;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.carte-appartement-hotel-de-la-mer img {
-    height: 10rem;
-    border-radius: 15px 15px 0 0;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-.carte-appartement-auberge-le-panier {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 300px;
-    width: 280px;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.carte-appartement-auberge-le-panier img {
-    height: 10rem;
-    border-radius: 15px 15px 0 0;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-.carte-appartement-auberge-chez-amina {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 300px;
-    width: 280px;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.carte-appartement-auberge-chez-amina img {
-    height: 10rem;
-    border-radius: 15px 15px 0 0;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-/*couleur des étoiles*/
-
-.etoile {
-    color:var(--bleu) ;
-}
-.gris {
-    color: #b3b9c4;
-}
-
-/*Animation au survol des cartes*/
-
-.liste-appartements p:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-
-
-/*Section : Populaires*/
-
-.populaires {
-    border: solid 1px var(--bleu-clair);
-    background-color: var(--bg-gris);
-    width: 33%;
-    padding: 1rem;
-    border-radius: 1rem;
-
-}
-.liste-populaire-appartement {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px 10px ;
-    align-items: center; 
-    padding: 1rem;
-} 
-.icone-populaire {
-    display: flex;
-    justify-content: space-between;      
-}
-
-
-  /*Populaires : Cartes des appartements*/
-
-.conteneur-carte {
-    display: flex;
-    height: 100%;
-    align-items: stretch;
-    justify-content: space-between;
-}
-
-.populaire-photo {
-    width: 33%;     
-}
-
-.populaire-description {
-    display: flex;
-    flex-direction: column; 
-    flex-basis: 100%; 
-}
-
-.carte-appartement-populaire-soleil-du-matin {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 100%;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    cursor: pointer;  
-}
-.carte-appartement-populaire-soleil-du-matin img {
-    height: 8rem;
-    border-radius: 15px 0 0 15px;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-.carte-appartement-populaire-au-coeur-de-eau {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 100%;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    cursor: pointer;
-}
-.carte-appartement-populaire-au-coeur-de-eau img {
-    height: 9rem;
-    border-radius: 15px 0 0 15px;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-.carte-appartement-populaire-hotel-tout-bleu-blanc {
-    background-color:white;
-    border: solid 1px var(--bg-gris);
-    height: 100%;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;
-    cursor: pointer;
-}
-.carte-appartement-populaire-hotel-tout-bleu-blanc img {
-    height: 9rem;
-    border-radius: 15px 0 0 15px;
-    padding: 0.5rem;
-    object-fit: cover;
-}
-
-
-
-/*Section : Activités*/
-
-#ancre-activites {
-    margin-top: 5rem;
-    width: 100%;
-}
-.activites {
-    border: solid 1px var(--bleu-clair);
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-}
-.activites-marseille {
-    display: flex;
-}
-.conteneur-activites1 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-
-}
-.conteneur-activites2 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-    /*Activités : Cartes des activités*/
-
-
-.carte-activite-vieux-port {
-    border: solid 1px var(--bg-gris);
-    width: 100%;
-    height: 70%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-}
-.carte-activite-vieux-port img {
-    border-radius: 1rem 1rem 0 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-    
-.carte-activite-fort-pomegues {
-    border: solid 1px var(--bg-gris);
-    width: 70%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-}
-.carte-activite-fort-pomegues img {
-    border-radius: 1rem 1rem 0 0;
-    height: 70%;
-    width: 50%;
-    object-fit: cover;
-}
-
-.carte-activite-iles-frioul {
-    border: solid 1px var(--bg-gris);
-    width: 70%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-}
-.carte-activite-iles-frioul img {
-    border-radius: 1rem 1rem 0 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.carte-activite-parc-des-calanques {
-    border: solid 1px var(--bg-gris);
-    width: 100%;
-    height: 70%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-}
-.carte-activite-parc-des-calanques img {
-    border-radius: 1rem 1rem 0 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.carte-activite-notre-dame-de-la-garde {
-    border: solid 1px var(--bg-gris);
-    width: 70%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-}
-.carte-activite-notre-dame-de-la-garde img {
-    border-radius: 1rem 1rem 0 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.carte-activite-parc-longchamp {
-    border: solid 1px var(--bg-gris);
-    width: 70%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-}
-.carte-activite-parc-longchamp img {
-    border-radius: 1rem 1rem 0 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-
-/*footer*/
-
-
- footer {
-        background-color: var(--bg-gris);
-        height: 200px;
-        margin-top: 100px;
-}
-
-#footer-items {
-        display: flex;
-        justify-content: space-between;
-}
-
-.footer-items {
-        width: 100%;    
-}
-
-.footer-items h3 {
-        font-size: 13px;
-        font-weight: 700;
-}
-
-.footer-items li {
-        list-style: none;
-        font-size: 12px;
-        font-weight: 700;
-        opacity: 0.7;
-}
+*/
+   
