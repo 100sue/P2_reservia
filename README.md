@@ -21,7 +21,7 @@ L'objectif est d'intégrer la maquette d'un site de recherche et de planificatio
 
 <strong>Les éléments fournis par l'entreprise Reservia :</strong><br>
 
-La maquette pour les résolutions d'ordinateur et de téléphone nous est fournis.<br>
+La maquette, pour les résolutions d'ordinateur et de téléphone, nous est fournie.<br>
 Toutes les images présentes sur le site sont aussi livrés en format small, medium, large et extra-large.<br>
 Les icones proviennent de Font Awesome.<br>
 Les couleurs sont :<br>
@@ -42,13 +42,13 @@ Chaque carte d’hébergement ou d’activité devra être cliquable dans son in
 Les filtres, bien que non fonctionnels, doivent changer de style au survol.<br>
 Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.<br>
 
-Même si aucune maquette pour la résolution tablette n'est fournie, l'intégration doit la prendre en charge.<br>
-Les images doivent être de taille adéquate afin qu'elle soit le plus jolie possible en impactant le moins possible le temps de chargement de la page.<br>
+Aucune maquette pour la résolution tablette n'est fournie, cependant l'intégration doit la prendre en charge.<br>
+Les images doivent être de taille adéquate afin qu'elles soient le plus jolie possible, en impactant le moins possible le temps de chargement de la page.<br>
 
-Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.<br>
-Le site devra être compatible avec les dernières versions de Chrome et Firefox.<br>
+Le code devra utiliser des balises sémantiques et il ne doit contenir aucune erreur, ni alerte au validateur W3C HTML et CSS.<br>
+Le site devra être compatible avec les dernières versions de Chrome et de Firefox.<br>
 Le HTML et le CSS doivent être séparés et le dossier doit être organisé.<br>
-Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab.<br>
+Le code doit-être versionné avec git et doit avoir un repo distant sur Github ou Gitlab.<br>
 
 
 
