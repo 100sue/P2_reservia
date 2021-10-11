@@ -1,14 +1,16 @@
 <strong>Projet Openclassrooms, Projet 2 : Reservia .</strong>
 
 Deuxième projet du parcours de développeur web chez OpenClassrooms.<br>
-L'objectif est d'intégrer la maquette d'un site de recherche et de planification de vacances nommé "Reservia".
-
+L'objectif est d'intégrer la maquette d'un site de recherche et de planification de vacances nommé "Reservia".<br>
+<br>
 
 <strong>Compétences évaluées :</strong>
 
-[x]  Intégrer du contenu conformément à une maquette
-
+[x]  Intégrer du contenu conformément à une maquette<br>
 [x]  Implémenter une interface responsive
+
+<br>
+
 
 (Maquette, ci-dessous)
 
@@ -28,7 +30,7 @@ Les couleurs sont :<br>
 - gris #F2F2F2.<br>
 La police est "Raleway".<br>
 
-
+<br>
 
 <strong>Cahier des charges :</strong>
 
