@@ -20,9 +20,12 @@ L'objectif est d'intégrer la maquette d'un site de recherche et de planificatio
 <strong>Les éléments fournis par l'entreprise Reservia :</strong><br>
 
 La maquette pour les résolutions d'ordinateur et de téléphone nous est fournis.<br>
-Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.<br>
+Toutes les images présentes sur le site sont aussi livrés en format small, medium, large et extra-large.<br>
 Les icones proviennent de Font Awesome.<br>
-Les couleurs sont : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2.<br>
+Les couleurs sont :<br>
+- bleu #0065FC<br> 
+- bleu clair #DEEBFF <br>
+- gris #F2F2F2.<br>
 La police est "Raleway".<br>
 
 
@@ -37,7 +40,7 @@ Chaque carte d’hébergement ou d’activité devra être cliquable dans son in
 Les filtres, bien que non fonctionnels, doivent changer de style au survol.<br>
 Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.<br>
 
-Même si aucune maquette pour la résolution tablette n'est fournis, l'intégration doit la prendre en charge.<br>
+Même si aucune maquette pour la résolution tablette n'est fournie, l'intégration doit la prendre en charge.<br>
 Les images doivent être de taille adéquate afin qu'elle soit le plus jolie possible en impactant le moins possible le temps de chargement de la page.<br>
 
 Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.<br>
