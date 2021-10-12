@@ -50,5 +50,7 @@ Le site devra être compatible avec les dernières versions de Chrome et de Fire
 Le HTML et le CSS doivent être séparés et le dossier doit être organisé.<br>
 Le code doit-être versionné avec git et doit avoir un repo distant sur Github ou Gitlab.<br>
 
+<br>
 
+Accès au projet : https://100sue.github.io/P2_reservia/
 
