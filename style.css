@@ -14,14 +14,16 @@ html {
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 1.25rem;
-}
-
 a {
     color: inherit;
     text-decoration: none;
 }
+
+
+/* Header */
+
+    /*Navbar*/
+
 .header {
     display: flex;
     justify-content: center;
@@ -31,13 +33,15 @@ a {
 
 .header-image {
     margin-right: auto;
+    height: 2.8rem;
     padding: 0 2rem;
 }
+
 .header-nav {
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
+
 .header-nav-lien {
     padding: 2rem;
     font-weight: 500;
@@ -45,13 +49,14 @@ a {
     text-align: center;
     transition-duration: 0.1s;
     border-top: 3px transparent solid;
-
     display: flex;
 }
+
 .header-nav-lien:hover {
     border-top: 3px solid var(--bleu);
     color: var(--bleu);
 }
+
 .header-nav-sinscrire {
     display: flex;
     align-items: center;
@@ -59,9 +64,11 @@ a {
     color: var(--bleu);
     font-weight: 600;
 }
+
 .header-nav-sinscrire:hover {
     border-top: 3px solid var(--bleu);
 }
+
 
 @media (max-width: 600px) {
     .header-nav {
@@ -79,175 +86,142 @@ a {
         border-top-color: transparent;
         border-bottom-color: var(--bleu);
     }
-
-
 }
     
 
-/* Header */
-
-    /*Navbar*/
-
-
-
-
-
-/*attente
-
-@media (max-width: 800px) {
-    .sub-nav {
-        order: 1;
-        flex-basis: 100%;
-    }
-
-    .sub-nav a {
-        flex-basis: 50%;
-        text-align: center;
-        border-bottom: solid 3px transparent;
-    }
-    .sub-nav a:hover {
-        border-bottom-color: var(--bleu);
-        border-top-color: transparent;
-    }
-}
-*/
-
-
-
-
-
-
-
-
-#slogan {
-    font-size: 9px;
-    font-weight: 700;
-}
-
-#lieu {
-    font-size: 12px;
-    line-height: 10px;
-    opacity: 0.6;
-}
-
  /*Recherche*/
+
+.recherche-header-titre {
+    margin-bottom: 0.5rem;   
+}
+.recherche-header-soustitre {
+    margin-top: 0;
+    opacity: 0.7;
+}
 
 #recherche {
    width: 100%;
 }
 
 .recherche-formulaire {
-    display: flex; 
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
 }
 
-#recherche img {
-    width: 20px;
-    border: solid 1px var(--bleu-clair);
+.recherche-formulaire-icone {
     background-color: var(--bg-gris);
-    align-items: center;
-    border-radius: 10px 0 0 10px;
-    padding: 10px;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+    padding: 1rem 1.25rem;  
 }
 
-#recherche input {
-    height: 50px;
-    border: solid 1px var(--bg-gris);
-    display: inline-block;
-    font-size: 15px;
-}
-
-.boutton {
-    height: 50px;
-    width: 120px;
-    color: white;
-    text-decoration: none;
-    background-color: var(--bleu);
-    border-radius: 0 10px 10px 0 ;
-    padding: 19px;
-    margin-right: 20px;
-}
-.boutton:hover {
-    background-color: blue;
+.recherche-formulaire-input {
+    width: 15rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: "Raleway", "Sans serif";
+    padding: 0 1.3rem;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid var(--bg-gris);
+    border-bottom: 1px solid var(--bg-gris);
+    box-sizing: border-box;
     
 }
-
-      /*filtres*/
-
-#filtres {
-        display: flex;
-        gap:  1rem;
-        align-items: center;
-        margin-top: 50px;
-        margin-bottom: 30px;
+.recherche-formulaire-boutton {
+    background-color: var(--bleu);
+    color: white;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    cursor: pointer;
 }
 
-#filtres p {
-        margin-right: 20px;
-        font-weight: bold;
+ /*filtres*/
+
+.filtres {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.filtres-titre {
+    margin: 0 1.5rem 1rem 0;
+    display: flex;
+    align-items: center;
 }
 
 .varieté-filtres {
-       display: flex;
-       align-items: center;
-       border: solid 2px var(--bleu-clair);
-       border-radius: 50px;
-       height: 45px;     
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;  
 }
 
-.varieté-filtres i {
-        color: var(--bleu);
-        background-color: var(--bleu-clair);
-        border-radius: 30px;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: -3px;
+.varieté-filtres-icone {
+    background-color: var(--bleu-clair);
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
 }
-
-.varieté-filtres p {
-        font-weight: bold;
-        padding: 1rem;
-    
+.varieté-filtres-icone i {
+    color: var(--bleu);
+}
+.varieté-filtres-titre {
+    margin: 0 1rem;
 }
 
 /*animation au survol des filtres*/
 
-.varieté-filtres i:hover {
-        color: white;
-        background-color: var(--bleu);
+.varieté-filtres-titre:hover {
+    color: var(--bleu);
+    transform: scale(1.05);
+    cursor: pointer;
 }
     
-.varieté-filtres p:hover {
-        color: var(--bleu);
-        transform: scale(1.05);
-        cursor: pointer;
-}
     
 .info {
-        display: flex;
-        font-size: 12px;
-        color: black ;
-        opacity: 0.6;
-        margin-bottom: 40px;    
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
 }
-
-.info i {
-       width: 20px;
-       height: 20px;
-       border: solid 2px var(--bg-gris);
-       border-radius: 25px;
-       margin-right: 5px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       color: var(--bleu);
+   
+.info-icone {
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.info-icone i {
+    color: var(--bleu);
+}
+.information-texte {
+    margin: 0;
 }
 
 
 /*Main*/
-
 
 /*Section : Hébergements*/
 
@@ -269,8 +243,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-    
+       
 }
 
     /*Hébergements : Carte des appartements*/

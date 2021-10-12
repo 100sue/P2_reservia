@@ -26,42 +26,58 @@
         </nav>
         <a class="header-nav-sinscrire"  href="#">S'inscrire</a>
     </header>
-        <div id="slogan">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p id="lieu">En plein centre ville ou en pleine nature</p>
-        </div>
+    <section class="recherche">
+        <header class="recherche-header">
+                <h1 class="recherche-header-titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="recherche-header-soustitre">En plein centre ville ou en pleine nature</p>
+        </header>
         <div id="recherche">
-            <div class="recherche-formulaire">
-                <img src="./images/icones/map-marker-alt-solid.svg" alt="icone carte">
-                <form action="#" method="post">
-                    <input placeholder="Marseille, France" name="name" type="text">
-                    <a class="boutton" href="#">Rechercher</a>
+                <form class="recherche-formulaire"  action="#" method="post">
+                    <span class="recherche-formulaire-icone">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <input class="recherche-formulaire-input" placeholder="Marseille, France" name="name" type="text">
+                    <button class="recherche-formulaire-boutton">
+                        <span class="recherche-formulaire-boutton-texte">rechercher</span>
+                        <i class="recherche-formulaire-boutton-texte-icone fas fa-search"></i>
+                    </button>
                 </form>
-            </div>
-            <div id="filtres">
-                <p>Filtres</p>
+            <div class="filtres">
+                <h2 class="filtres-titre">Filtres</h2>
                 <div class="varieté-filtres">
-                    <i class="fas fa-money-bill-wave"></i>
-                    <p>Economique</p>
+                    <div class="varieté-filtres-icone">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <span class="varieté-filtres-titre">Economique</span>
                 </div>
                 <div class="varieté-filtres">
-                    <i class="fas fa-child"></i>
-                    <p>Familial</p>
+                    <div class="varieté-filtres-icone">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <span class="varieté-filtres-titre">Familial</span>
                 </div>
                 <div class="varieté-filtres">
-                    <i class="fas fa-heart"></i>
-                    <p>Romantique</p>
+                    <div class="varieté-filtres-icone">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <span class="varieté-filtres-titre">Romantique</span>
                 </div>
                 <div class="varieté-filtres">
-                    <i class="fas fa-dog"></i>
-                    <p>Animaux autorisés</p>
+                    <div class="varieté-filtres-icone">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <span class="varieté-filtres-titre">Animaux autorisés</span>
                 </div>
             </div>
             <div class="info">
-                <i class="fas fa-info"></i>
-                <p id="information">Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="info-icone">
+                    <i class="fas fa-info"></i>
+                </div>
+                <p class="information-texte">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </div>
+    </section>
+       
 
     <!--main-->
 
