@@ -258,10 +258,11 @@ a {
 
 @media screen  and (min-width: 350px) {
     .recherche-header-titre {
-        margin: 1rem;  
+       margin: 1rem;
     }
+
     .recherche-header-soustitre {
-        margin: 1rem 0rem 1rem 1rem;
+       margin: 1rem 0rem 1rem 1rem; 
     }
 
     .filtres-titre {
@@ -304,7 +305,6 @@ a {
 
 .liste-hebergements {
     display: flex;  
-    background-color: cadetblue;
 }
 
 .hebergements {
@@ -314,16 +314,15 @@ a {
     margin-right: 2rem;
     padding: 1rem;
     border-radius: 1rem;
-
-    background-color: blueviolet;
+    gap: 2rem;
 }
 
 .liste-appartements {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: blue;
-       
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;  
+    flex-wrap: wrap;    
 }
 
     /*Hébergements : Carte des appartements*/
@@ -334,27 +333,33 @@ a {
     height: 100%;
     min-width: 15rem;
     padding: 0.4rem;
+    margin: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
-    cursor: pointer;
-    
-    
+    cursor: pointer;  
 }
+
 .carte-appartement img {
-    height: 9rem;
+    height: 8rem;
     width: 100%;
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-    
-    
+    border-radius: 1rem 1rem 0 0;     
 }
+
 .carte-appartement h3 {
     margin: 0.5rem;
 }
+
 .carte-appartement p {
     margin: 0.5rem;
+}
+
+/*animation au survol des cartes*/
+
+.carte-appartement:hover {
+    transform: scaleX(1.03);
 }
 
  /*couleur des étoiles*/
@@ -378,10 +383,19 @@ a {
     border-radius: 1rem;
 }
 
-.liste-populaire-appartement  {
+.populaires h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.populaires h2, .hebergements h2 {
+    margin-top: 0.5rem;
+}
+
+.liste-populaire-appartement {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: space-between;  
 } 
@@ -396,15 +410,15 @@ a {
     width: 100%;
     max-height: 10rem;
     min-width: 15rem;
+    margin: 0.5rem 1rem 2rem 1rem;
     padding: 0.25rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;
-      
 }
 
 .carte-appartement-populaire img {
-    height: 8rem;
+    height: 10rem;
     width: 40%;
     border-radius: 1rem 0 0 1rem;
     margin-right: 0.5rem;
@@ -412,13 +426,13 @@ a {
 }
 .carte-populaire-photo {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
 .carte-populaire-description {
     display: flex;
     flex-direction: column;
-
 }
 .carte-populaire-description p {
     margin-top: auto;
@@ -426,11 +440,14 @@ a {
 .carte-populaire-description.etoile {
     margin-bottom: auto;
 }
+.carte-appartement-populaire:hover {
+    transform: scaleX(1.03);
+}
 
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width: 800px) {
     
-    .liste-populaire-appartement {
+    .liste-populaire-appartement  {
         flex-direction: column;
     }
     .populaires {
@@ -441,54 +458,57 @@ a {
 
 /*Section : Activités*/
 
-.activites {
-    border: solid 1px var(--bleu-clair);
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.activites-marseille {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: space-between;
-       
-}
 
-
-    /*Activités : Cartes des activités
-    attente
+    /*Activités : Cartes des activités*/
+    
 
 .activites {
-    border: solid 1px var(--bleu-clair);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .activites-marseille {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    
       
 }
 .carte-activite {
     border: solid 1px var(--bg-gris);
-    width: 100%;
+    background-color:white;
     height: 100%;
+    margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    box-shadow: 0 0 16px #0000002e;;
+    box-shadow: 0 0 16px #0000002e;
 }
 .carte-activite img {
     border-radius: 1rem 1rem 0 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover
 }
-    
+.carte-activite h3 {
+    margin: 1rem;
+   
+}
+
+
 .carte-activite-photo {
    height: 50%;
-}*/
+ 
+}
 
+.carte-activite-photo img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.carte-activite:hover {
+    transform: scaleX(1.03)
+}
 
 /*footer*/
 
