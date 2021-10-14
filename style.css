@@ -477,6 +477,9 @@ a {
     }
 }
 
+
+
+
 /*Section : Activités*/
 
     /*Activités : Cartes des activités*/
@@ -537,6 +540,12 @@ a {
     .carte-populaire-photo {
     max-height: 10rem;
 }
+       .carte-activite {
+        height: 13rem;
+       }
+       .carte-activite img{
+           height: 10rem;
+       }
     
 }
 
