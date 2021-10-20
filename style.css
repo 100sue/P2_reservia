@@ -198,19 +198,45 @@ a {
     cursor: pointer;
 }
 
+.info {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+}
+   
+.info-icone {
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
 
-  
+.info-icone i {
+    color: var(--bleu);
+}
+
+.information-texte {
+    margin: 0;
+}
+
+
 @media screen and (max-width: 450px) {
-    .filtres-titre{
-        margin: 0 9rem 1rem 0;
-    }
-
     .recherche-header-titre {
         margin: 2rem 0.5rem 0.5rem 2rem; 
     }
 
     .recherche-header-soustitre {
         margin-left: 2rem;
+    }
+    
+    .filtres-titre{
+        margin: 0 9rem 1rem 0;
     }
 
     .recherche-formulaire {
@@ -247,83 +273,33 @@ a {
 }
 
 
-.info {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0 2rem 0;
-}
-   
-.info-icone {
-  height: 2rem;
-  width: 2rem;
-  min-height: 2rem;
-  min-width: 2rem;
-  border: solid 1px #d9d9d9;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1rem;
-}
+@media screen and (max-width: 800px) {
+    .recherche-header-titre {
+        margin: 2rem 0.5rem 0.5rem 2rem; 
+    }
 
-.info-icone i {
-    color: var(--bleu);
-}
-
-.information-texte {
-    margin: 0;
-}
-/*attente
-@media screen and (min-width: 550px) {
+    .recherche-header-soustitre {
+        margin-left: 2rem;
+    }
+    .recherche-formulaire {
+       
+        margin-left: 2rem; 
+    }
     .recherche-formulaire-boutton-texte {
         display: block;
     }
     .recherche-formulaire-boutton-texte-icone{
         display: none;
     }
-    
+    .filtres {
+        margin-left: 2rem;
+    }
+    .info {
+        margin: 1rem 0 2rem 2rem;
+    }
 
-@media screen and (max-width: 650px) {
-    .recherche-header-titre {
-        margin-bottom: 0.5rem;   
-    }
-    .recherche-header-soustitre {
-        margin-top: 0;
-        opacity: 0.7;
-    }
-    .filtres-titre  {
-        width: 100%;
-    }
-    .varieté-filtres {
-        margin-right: 1rem;
-    }
 }
 
-
-@media screen  and (max-width: 400px) and (min-width: 350px) {
-    .recherche-header-titre {
-       margin: 1rem;
-    }
-
-    .recherche-header-soustitre {
-       margin: 1rem 0rem 1rem 1rem; 
-    }
-
-    .filtres-titre {
-        margin: 1rem 0rem 0.5rem 1rem;
-        font-size: 18px;   
-    }
-
-    .varieté-filtres {
-        margin-right: 0;
-        margin-left: 0.8rem;
-    }
-    
-   
-}
-
-
-} */
 
 /*Main*/
 
@@ -509,6 +485,7 @@ a {
 
 }
 
+
 @media screen and (max-width: 800px) {
     
     .liste-hebergements {
@@ -516,41 +493,16 @@ a {
     }
     .populaires {
         order: -1;
+        margin: 2rem;
     }
-    
-}
-
-/*attente
-
-@media screen and (max-width: 450px) {
-    .liste-hebergements {
-        display: block; 
-    }
-     .hebergements {
-        margin: 0.5rem;
-        border: none;
-        background-color: none; 
-    }
-    .populaires  {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin: 0.2rem;
-        display: flex;
-        flex-direction: column;
+    .hebergements {
+        margin: 2rem;
     }
     .carte-appartement {
-        min-width: 22rem;
+        min-width: 18rem;
     }
-    .populaires {
-        order: -1;
-    }
-    .hebergement-suite-lien {
-        margin-top: 1rem;
-    }
+ 
 }
-
-
-*/
 
 
 
@@ -611,12 +563,10 @@ a {
 }
 
 .carte-activite-petit h3 {
-    margin: 1rem;
-    
-    
+    margin: 1rem;    
 }
 
-   /*Animation au survol des cartes */
+/*Animation au survol des cartes */
 
 .carte-activite:hover {
     transform: scaleX(1.03)
@@ -659,29 +609,35 @@ a {
 @media screen and (max-width: 800px) {
     
     .activites-marseille {
-        flex-direction: column;
-    }
-    
-    
-}
-
-/*atente
-@media screen and (max-width: 450px) {
-    .activites-marseille {
         display: block;
+        margin: 2rem;  
     }
-    .carte-populaire-photo {
-    max-height: 10rem;
-}
-       .carte-activite {
-        height: 13rem;
-       }
-       .carte-activite img{
-           height: 10rem;
-       }
+    
+    .activites-titre {
+        margin-left: 2rem;
+    }
+    .carte-activite {
+        width: 100%; 
+        height: 210px; 
+        margin-bottom: 2rem;
+    }
+    .carte-activite img {
+        height: 150px;
+    }
+    .carte-petit-conteneur {
+        flex-direction: row;
+        margin: 0;
+        
+    }
+    .carte-activite-petit {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .carte-activite-petit img {
+        height: 210px; 
+    }
     
 }
-*/
 
 
 /*footer*/
