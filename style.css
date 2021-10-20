@@ -10,6 +10,7 @@
 html {
     font-family: "Raleway", sans-serif;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -70,6 +71,7 @@ a {
 }
 
 
+
 @media screen and (max-width: 600px) {
     .header-nav {
         order: 1;
@@ -128,9 +130,9 @@ a {
     border-left: none;
     border-top: 1px solid var(--bg-gris);
     border-bottom: 1px solid var(--bg-gris);
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
+
 .recherche-formulaire-boutton {
     background-color: var(--bleu);
     color: white;
@@ -195,8 +197,56 @@ a {
     transform: scale(1.05);
     cursor: pointer;
 }
-    
-    
+
+
+  
+@media screen and (max-width: 450px) {
+    .filtres-titre{
+        margin: 0 9rem 1rem 0;
+    }
+
+    .recherche-header-titre {
+        margin: 2rem 0.5rem 0.5rem 2rem; 
+    }
+
+    .recherche-header-soustitre {
+        margin-left: 2rem;
+    }
+
+    .recherche-formulaire {
+        display: inline-flex;
+        margin-left: 1.5rem; 
+    }
+
+    .recherche-formulaire-input {
+        width: 14rem;
+    }
+
+    .recherche-formulaire-boutton-texte {
+        display: none;
+    }
+
+    .recherche-formulaire-boutton-texte-icone{
+        display: block;
+    }
+
+    .recherche-formulaire-boutton {
+        border-radius: 1rem;
+        padding: 0 1.2rem;
+    }
+
+    .filtres-titre {
+        font-size: 20px;   
+    }
+    .info  {
+        margin: 1rem;
+    }
+    .information-texte {
+        margin: 0 1rem;
+    }
+}
+
+
 .info {
     display: flex;
     align-items: center;
@@ -215,29 +265,15 @@ a {
   justify-content: center;
   margin-right: 1rem;
 }
+
 .info-icone i {
     color: var(--bleu);
 }
+
 .information-texte {
     margin: 0;
 }
-
-@media screen and (max-width: 551px) {
-    
-    .recherche-formulaire {
-        display: flex;
-        width: 100%;
-    }
-    .recherche-formulaire-input {
-        flex: 1;
-    }
-    .recherche-formulaire-boutton-texte {
-        display: none;
-    }
-    .recherche-formulaire-boutton-texte-icone{
-        display: block;
-    }
-}
+/*attente
 @media screen and (min-width: 550px) {
     .recherche-formulaire-boutton-texte {
         display: block;
@@ -282,15 +318,12 @@ a {
         margin-right: 0;
         margin-left: 0.8rem;
     }
-    .recherche-formulaire-boutton {
-        border-radius: 1rem;
-        padding: 0 1.5rem;
-    }
+    
    
 }
 
 
-} 
+} */
 
 /*Main*/
 
@@ -318,14 +351,13 @@ a {
 
 .liste-appartements {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 1rem;    
+      
 }
 
 
-
-    /*Hébergements : Carte des appartements*/
+/*Hébergements : Carte des appartements*/
 
 .carte-appartement {
     background-color:white;
@@ -362,13 +394,13 @@ a {
 }
 
 
-    /*animation au survol des cartes*/
+/*animation au survol des cartes*/
 
 .carte-appartement:hover {
     transform: scaleX(1.03);
 }
 
-    /*couleur des étoiles*/
+/*couleur des étoiles*/
 
  .etoile {
     color:var(--bleu) ;
@@ -405,8 +437,7 @@ a {
     
 } 
 
-
-     /*Populaires : Cartes des appartements*/
+/*Populaires : Cartes des appartements*/
 
 .carte-appartement-populaire {
     background-color:white;
@@ -431,8 +462,7 @@ a {
 }
 .carte-populaire-photo {
     display: flex;
-    margin-right: 0.5rem;
-    
+    margin-right: 0.5rem;    
 }
 
 .carte-populaire-description {
@@ -449,6 +479,34 @@ a {
 }
 .carte-appartement-populaire:hover {
     transform: scaleX(1.03);
+}
+
+
+@media screen and (max-width: 450px) {
+    .liste-appartements {
+        display: block;    
+    }  
+    .populaires {
+        border-radius: 0;
+    }
+    .carte-appartement-populaire {
+        margin: 0.5rem 1rem 1rem 1rem;
+    }
+
+    .hebergements {
+        background-color: white;
+        border: 0;
+    }
+    .carte-appartement {
+        min-width: 23rem;
+        margin: 0 0 1rem 0;
+        padding: 0;
+
+    }
+    .hebergement-suite-lien {
+        margin-top: 2rem;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -506,8 +564,7 @@ a {
 }
 
 .activites-marseille {
-    display: flex;
-   
+    display: flex;   
 }
 
 .carte-activite {
@@ -517,7 +574,6 @@ a {
     box-shadow: 0 0 16px #0000002e;
     width: 23%;
     height: 580px;
-
 }
 
 .carte-activite img {
@@ -528,8 +584,7 @@ a {
 }
 
 .carte-activite h3 {
-    margin: 1rem;
-    
+    margin: 1rem;   
 }
 
 .carte-petit-conteneur {
@@ -569,6 +624,38 @@ a {
 .carte-activite-petit:hover {
     transform: scaleX(1.03)
 }
+
+
+@media screen and (max-width: 450px) {
+    .activites-marseille {
+        margin: 1rem;   
+    }
+    .activites-titre {
+        margin-left: 1rem;
+    }
+    .carte-activite {
+        width: 100%; 
+        height: 210px; 
+        margin-bottom: 2rem;
+    }
+    .carte-activite img {
+        height: 150px;
+    }
+    .carte-petit-conteneur {
+        margin-right: 0;
+    }
+    .carte-activite-petit {
+        height: 210px;
+        margin-bottom: 2rem;
+    }
+    .carte-activite-petit img {
+        height: 150px; 
+    }
+}
+
+
+
+
 @media screen and (max-width: 800px) {
     
     .activites-marseille {
