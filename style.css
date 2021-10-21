@@ -145,6 +145,11 @@ a {
     cursor: pointer;
 }
 
+.recherche-formulaire-boutton-texte-icone {
+   
+    display: none;
+}
+
  /*filtres*/
 
 .filtres {
@@ -245,20 +250,21 @@ a {
     }
 
     .recherche-formulaire-input {
-        width: 14rem;
+        width: 100%;
     }
 
     .recherche-formulaire-boutton-texte {
         display: none;
     }
 
-    .recherche-formulaire-boutton-texte-icone{
+    .recherche-formulaire-boutton-texte-icone {
+        padding: 1rem;
         display: block;
     }
 
     .recherche-formulaire-boutton {
         border-radius: 1rem;
-        padding: 0 1.2rem;
+        padding: 0 0.5rem;
     }
 
     .filtres-titre {
@@ -271,9 +277,19 @@ a {
         margin: 0 1rem;
     }
 }
+@media screen and (max-width: 380px) {
+    .recherche-formulaire-input {
+        width: 12rem;
+    }
+}
+@media screen and (max-width: 330px) {
+    .recherche-formulaire-input {
+        width: 9rem;
+        font-size: 0.7rem;
+    }
+}
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .recherche-header-titre {
         margin: 2rem 0.5rem 0.5rem 2rem; 
     }
@@ -285,12 +301,7 @@ a {
        
         margin-left: 2rem; 
     }
-    .recherche-formulaire-boutton-texte {
-        display: block;
-    }
-    .recherche-formulaire-boutton-texte-icone{
-        display: none;
-    }
+   
     .filtres {
         margin-left: 2rem;
     }
@@ -458,6 +469,7 @@ a {
 }
 
 
+
 @media screen and (max-width: 450px) {
     .liste-appartements {
         display: block;    
@@ -472,21 +484,39 @@ a {
     .hebergements {
         background-color: white;
         border: 0;
+        margin: 1rem;
     }
     .carte-appartement {
         min-width: 23rem;
         margin: 0 0 1rem 0;
         padding: 0;
-
     }
+
     .hebergement-suite-lien {
         margin-top: 2rem;
     }
 
 }
+@media screen and (max-width: 330px) {
+    .carte-appartement-populaire {
+        min-width: 18rem;
+        padding: 0.3rem;
+    }
+    .populaires {
+        margin: 1.2rem;
+    }
+    
+    .liste-appartements {
+        display: flex;    
+    } 
+    .hebergements {
+        margin: 0;
+    }
+
+}
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     
     .liste-hebergements {
         flex-direction: column;
@@ -495,16 +525,12 @@ a {
         order: -1;
         margin: 2rem;
     }
-    .hebergements {
-        margin: 2rem;
-    }
+    
     .carte-appartement {
         min-width: 18rem;
     }
  
 }
-
-
 
 /*Section : Activités*/
 
@@ -578,7 +604,8 @@ a {
 
 @media screen and (max-width: 450px) {
     .activites-marseille {
-        margin: 1rem;   
+        margin: 0; 
+        display: block;  
     }
     .activites-titre {
         margin-left: 1rem;
@@ -592,21 +619,18 @@ a {
         height: 150px;
     }
     .carte-petit-conteneur {
-        margin-right: 0;
+        margin-bottom: 18rem;
+        display: block;
+        gap: 2rem;
+
     }
-    .carte-activite-petit {
-        height: 210px;
-        margin-bottom: 2rem;
-    }
+  
     .carte-activite-petit img {
         height: 150px; 
     }
 }
 
-
-
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     
     .activites-marseille {
         display: block;
@@ -618,15 +642,16 @@ a {
     }
     .carte-activite {
         width: 100%; 
-        height: 210px; 
+        height: 260px; 
         margin-bottom: 2rem;
     }
     .carte-activite img {
-        height: 150px;
+        height: 210px;
     }
     .carte-petit-conteneur {
         flex-direction: row;
         margin: 0;
+        gap: 2rem;
         
     }
     .carte-activite-petit {
