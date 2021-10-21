@@ -335,6 +335,9 @@ a {
     border-radius: 1rem;
    
 }
+.hebergement-titre {
+    margin-left: 2rem;
+}
 
 .liste-appartements {
     display: flex;
@@ -350,9 +353,9 @@ a {
     background-color:white;
     border: solid 1px var(--bg-gris);
     height: 100%;
-    min-width: 15rem;
+    min-width: 14rem;
     padding: 0.4rem;
-    margin: 0.5rem;
+    margin: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;  
@@ -377,6 +380,7 @@ a {
 
 .hebergement-suite-lien {
     margin-top: 4rem;
+    margin-left: 2rem;
     font-weight: bold;
 }
 
