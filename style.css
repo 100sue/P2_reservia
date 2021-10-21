@@ -266,6 +266,9 @@ a {
         border-radius: 1rem;
         padding: 0 0.5rem;
     }
+    .varieté-filtres {
+        margin-right: 1rem;
+    }
 
     .filtres-titre {
         font-size: 20px;   
