@@ -242,9 +242,10 @@ a {
     margin: 0;
 }
 
+
 @media screen and (max-width: 320px) {
     .recherche-formulaire-input {
-        width: 5rem;
+        width: 9rem;
         font-size: 0.7rem;
     }
     .recherche-header-titre {
@@ -265,7 +266,7 @@ a {
     }
     
     .filtres-titre{
-        margin: 0 9rem 1rem 0;
+        margin: 0 11rem 1rem 0;
     }
 
     .recherche-formulaire {
@@ -273,14 +274,12 @@ a {
         margin-left: 1.5rem; 
     }
 
-    .recherche-formulaire-input {
-        width: 100%;
-    }
-
     .recherche-formulaire-boutton-texte {
         display: none;
     }
-
+    .recherche-formulaire-input {
+        width: 11rem;
+    }
     .recherche-formulaire-boutton-texte-icone {
         padding: 1rem;
         display: block;
@@ -298,7 +297,7 @@ a {
         font-size: 20px;   
     }
     .info  {
-        margin: 1rem;
+        margin: 0.2rem;
     }
     .information-texte {
         margin: 0 1rem;
@@ -314,15 +313,6 @@ a {
 
     .recherche-header-soustitre {
         margin-left: 2rem;
-    }
-    .recherche-formulaire {
-       
-        margin-left: 2rem; 
-    }
-   
-    
-    .info {
-        margin: 1rem 0 2rem 2rem;
     }
 
 }
@@ -357,7 +347,7 @@ a {
 
 .liste-appartements {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
       
 }
@@ -369,9 +359,9 @@ a {
     background-color:white;
     border: solid 1px var(--bg-gris);
     height: 100%;
-    min-width: 16rem;
+    min-width: 15rem;
     padding: 0.4rem;
-    margin: 0.55rem;
+    margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;  
@@ -396,7 +386,7 @@ a {
 
 .hebergement-suite-lien {
     margin-top: 4rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     font-weight: bold;
 }
 
@@ -488,20 +478,21 @@ a {
     transform: scaleX(1.03);
 }
 
+
 @media screen and (max-width: 320px) {
     .carte-appartement-populaire {
         min-width: 18rem;
         padding: 0.3rem;
     }
     .populaires {
-        margin: 1.2rem;
+        margin: 0.5rem;   
     }
     
     .liste-appartements {
         display: flex;    
     } 
-    .hebergements {
-        margin: 0;
+    .hebergement-titre {
+        margin-left: 0;
     }
 }
 
@@ -512,23 +503,22 @@ a {
     .populaires {
         border-radius: 0;
     }
+    .hebergements {
+        margin: 0;
+    }
     .carte-appartement-populaire {
         margin: 0.5rem 1rem 1rem 1rem;
     }
 
-    .hebergements {
-        background-color: white;
-        border: 0;
-        margin: 1rem;
-    }
     .carte-appartement {
-        min-width: 23rem;
+        min-width: 18rem;
         margin: 0 0 1rem 0;
         padding: 0;
     }
 
     .hebergement-suite-lien {
         margin-top: 2rem;
+        margin-left: 0.5rem;
     }
 
 }
@@ -541,8 +531,12 @@ a {
     }
     .populaires {
         order: -1;
-        margin: 0.5rem;
         
+    }
+    .hebergements {
+        background-color: white;
+        border: 0;
+    
     }
  
 }
@@ -693,12 +687,12 @@ a {
         max-width: 100%;
         width: 100%;
         margin: auto;
-        padding: 0 2rem;
+       
         box-sizing: border-box;
 }
 .footer-conteneur-colonne {
     width: 30%;
-    padding: 2rem 2rem;
+    padding: 0.3rem;
 }
 
 .footer-conteneur-colonne-liens {
@@ -707,7 +701,7 @@ a {
 }
 
 .footer-conteneur-colonne-liens:hover {
-    text-decoration: underline;
+    color: var(--bleu);
 }
 
 
