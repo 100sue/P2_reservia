@@ -7,7 +7,7 @@
     
 }
 
-html {
+body {
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
@@ -34,7 +34,6 @@ a {
 .header-image {
     margin-right: auto;
     height: 2.8rem;
-    padding: 0 2rem;
 }
 
 .header-nav {
@@ -52,10 +51,15 @@ a {
     display: flex;
     justify-content: center;
 }
-
-.header-nav-lien:hover {
-    border-top: 3px solid var(--bleu);
-    color: var(--bleu);
+.header-nav-lien2 {
+    padding: 2rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    display: flex;
+    justify-content: center;
 }
 
 .header-nav-sinscrire {
@@ -64,6 +68,14 @@ a {
     padding: 2rem;
     color: var(--bleu);
     font-weight: 600;
+}
+.header-nav-lien:hover {
+    border-top: 3px solid var(--bleu);
+    color: var(--bleu);
+}
+.header-nav-lien2:hover {
+    border-top: 3px solid var(--bleu);
+    color: var(--bleu);
 }
 
 .header-nav-sinscrire:hover {
@@ -230,6 +242,18 @@ a {
     margin: 0;
 }
 
+@media screen and (max-width: 320px) {
+    .recherche-formulaire-input {
+        width: 5rem;
+        font-size: 0.7rem;
+    }
+    .recherche-header-titre {
+        font-size: 1.2rem;
+    }
+    .filtres {
+        margin-left: 0.5rem;
+    }
+}
 
 @media screen and (max-width: 450px) {
     .recherche-header-titre {
@@ -280,17 +304,8 @@ a {
         margin: 0 1rem;
     }
 }
-@media screen and (max-width: 380px) {
-    .recherche-formulaire-input {
-        width: 12rem;
-    }
-}
-@media screen and (max-width: 330px) {
-    .recherche-formulaire-input {
-        width: 9rem;
-        font-size: 0.7rem;
-    }
-}
+
+
 
 @media screen and (max-width: 950px) {
     .recherche-header-titre {
@@ -305,9 +320,7 @@ a {
         margin-left: 2rem; 
     }
    
-    .filtres {
-        margin-left: 2rem;
-    }
+    
     .info {
         margin: 1rem 0 2rem 2rem;
     }
@@ -339,12 +352,12 @@ a {
    
 }
 .hebergement-titre {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .liste-appartements {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
       
 }
@@ -356,9 +369,9 @@ a {
     background-color:white;
     border: solid 1px var(--bg-gris);
     height: 100%;
-    min-width: 14rem;
+    min-width: 16rem;
     padding: 0.4rem;
-    margin: 1.5rem;
+    margin: 0.55rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;  
@@ -383,7 +396,7 @@ a {
 
 .hebergement-suite-lien {
     margin-top: 4rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-weight: bold;
 }
 
@@ -475,7 +488,22 @@ a {
     transform: scaleX(1.03);
 }
 
-
+@media screen and (max-width: 320px) {
+    .carte-appartement-populaire {
+        min-width: 18rem;
+        padding: 0.3rem;
+    }
+    .populaires {
+        margin: 1.2rem;
+    }
+    
+    .liste-appartements {
+        display: flex;    
+    } 
+    .hebergements {
+        margin: 0;
+    }
+}
 
 @media screen and (max-width: 450px) {
     .liste-appartements {
@@ -504,23 +532,6 @@ a {
     }
 
 }
-@media screen and (max-width: 330px) {
-    .carte-appartement-populaire {
-        min-width: 18rem;
-        padding: 0.3rem;
-    }
-    .populaires {
-        margin: 1.2rem;
-    }
-    
-    .liste-appartements {
-        display: flex;    
-    } 
-    .hebergements {
-        margin: 0;
-    }
-
-}
 
 
 @media screen and (max-width: 950px) {
@@ -530,7 +541,8 @@ a {
     }
     .populaires {
         order: -1;
-        margin: 2rem;
+        margin: 0.5rem;
+        
     }
  
 }
@@ -673,7 +685,7 @@ a {
 .footer {
         background-color: var(--bg-gris);
         width: 100%;
-        height: 100px;
+        height: auto;
 }
 
 .footer-conteneur {
