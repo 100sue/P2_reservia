@@ -342,7 +342,7 @@ a {
    
 }
 .hebergement-titre {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .liste-appartements {
@@ -491,9 +491,7 @@ a {
     .liste-appartements {
         display: flex;    
     } 
-    .hebergement-titre {
-        margin-left: 0;
-    }
+    
 }
 
 @media screen and (max-width: 450px) {
@@ -519,6 +517,9 @@ a {
     .hebergement-suite-lien {
         margin-top: 2rem;
         margin-left: 0.5rem;
+    }
+    .hebergement-titre {
+        margin-left: 0;
     }
 
 }
@@ -556,7 +557,7 @@ a {
 
 .carte-activite {
     background-color:white;
-    margin-right: 1rem;
+    margin-right: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     width: 23%;
@@ -578,7 +579,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .carte-activite-petit {
