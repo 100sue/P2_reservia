@@ -76,6 +76,8 @@ a {
     border-top: 3px solid var(--bleu);
 }
 
+
+
 @media screen and (max-width: 380px) {
     .header-image {
         margin-left: 1rem;
@@ -160,7 +162,6 @@ a {
 }
 
 .recherche-formulaire-boutton-texte-icone {
-   
     display: none;
 }
 
@@ -243,6 +244,8 @@ a {
 .information-texte {
     margin: 0;
 }
+
+
 @media screen and (max-width: 380px) {
     .recherche-header-titre {
         font-size: 1.2rem; 
@@ -258,8 +261,7 @@ a {
 
 @media screen and (max-width: 450px) {
     .recherche-header-titre {
-        margin: 2rem 0.5rem 0.5rem 2rem;
-        
+        margin: 2rem 0.5rem 0.5rem 2rem;   
     }
 
     .recherche-header-soustitre {
@@ -304,9 +306,6 @@ a {
     }
     
 }
-
-
-
 
 
 /*en attente
@@ -356,9 +355,9 @@ a {
     background-color: var(--bg-gris);
     margin-right: 2rem;
     padding: 10px;
-    border-radius: 1rem;
-   
+    border-radius: 1rem;  
 }
+
 .hebergement-titre {
     margin: 30px 30px 0 20px;
 }
@@ -421,6 +420,7 @@ a {
     margin-top: 10px;
     color:var(--bleu) ;
 }
+
 .gris {
     color: #b3b9c4;
 }
@@ -449,11 +449,9 @@ a {
 
 .liste-populaire-appartement {
     display: flex;
-    flex-direction: column;
-    
-  
-    
+    flex-direction: column;   
 } 
+
 
 /*Populaires : Cartes des appartements*/
 
@@ -526,16 +524,16 @@ a {
     .liste-appartements {
         display: flex;
         flex-direction: column;
-           
     }  
+
     .populaires {
         border-radius: 0;
     }
+
     .hebergements {
         margin: 0;
     }
    
-
     .carte-appartement {
         width: 100%;
         
@@ -551,20 +549,21 @@ a {
 
 }
 
+
 @media screen and (max-width: 1150px) {
     
     .liste-hebergements {
         flex-direction: column;
     }
+
     .populaires {
         order: -1;
         
     }
+
     .hebergements {
         background-color: white;
         border: 0;
-        
-    
     }
  
 }
@@ -575,33 +574,26 @@ a {
     
 .activites {
     margin-top: 3rem;
-    margin-bottom: 3rem;
-    
+    margin-bottom: 3rem;   
 }
 
 .activites-marseille {
     height: 600px;
-    width: 100%;
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    
-   
-    
 }
 
 .carte-activite1 {
     background-color:white;
- 
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 100%;
-   
+    width: 100%;  
 }
 
 .carte-activite1 img {
     border-radius: 1rem 1rem 0 0;
-    height: 530px;
+    height: 500px;
     width: 100%;
     object-fit: cover
 }
@@ -612,16 +604,14 @@ a {
 
 .carte-activite2 {
     background-color:white;
-   
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .carte-activite2 img {
     border-radius: 1rem 1rem 0 0;
-    height: 150px;
+   height: 150px;
     width: 100%;
     object-fit: cover
 }
@@ -632,30 +622,28 @@ a {
 
 .carte-activite3 {
     background-color:white;
-    
+    height: 200px;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
-    width: 100%;
-   
+    width: 100%;  
 }
 
 .carte-activite3 img {
     border-radius: 1rem 1rem 0 0;
-    height: 250px;
+    height: 150px;
     width: 100%;
     object-fit: cover
 }
+
 .carte-activite3 h3 {
     margin: 0.5rem;   
 }
 
 .carte-activite4 {
     background-color:white;
-    
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     width: 100%;
-    
 }
 
 .carte-activite4 img {
@@ -671,11 +659,9 @@ a {
 
 .carte-activite5 {
     background-color:white;
-    
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     width: 100%;
-    
 }
 
 .carte-activite5 img {
@@ -690,11 +676,9 @@ a {
 
 .carte-activite6 {
     background-color:white;
-    
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     width: 100%;
-    
 }
 
 .carte-activite6 img {
@@ -703,24 +687,30 @@ a {
     width: 100%;
     object-fit: cover
 }
+
 .carte-activite6 h3 {
     margin: 0.5rem;   
 }
+
 
 @media screen and (max-width: 950px) {
     
     .activites-marseille {
         display: flex;
         flex-direction: column;
-        
+        height: auto;
+
     }
-    
-    
-    .carte-activite {
+    .activites-marseille img {
         width: 100%; 
-        height: 260px; 
-       
+        height: 150px; 
     }
+    .activites-titre {
+         margin-left: 0.5rem;
+    }
+
+
+
 
 /*en attente
 @media screen and (max-width: 450px) {
@@ -785,26 +775,6 @@ a {
     
 }
 
-@media (max-width: 750px) {
-    .footer-conteneur {
-        flex-direction: column;
-        padding: 2rem;
-    }
-    .footer-conteneur-colonne {
-        width: 100%;
-        padding: 0;
-        margin: 1rem 0;
-    }
-    .footer-conteneur-colonne-titre {
-        margin: 0;
-    }
-    .footer-conteneur-colonne:first-child {
-        margin-top: 0;
-    }
-    .footer-conteneur-colonne:last-child {
-        margin-bottom: 0;
-    }
-}
 
 
 
@@ -824,9 +794,9 @@ a {
         max-width: 100%;
         width: 100%;
         margin-left: 2rem;
-       
         box-sizing: border-box;
 }
+
 .footer-conteneur-colonne {
     width: 30%;
     padding: 0.3rem;
@@ -843,6 +813,26 @@ a {
 
 }
 
+@media screen and (max-width: 650px) {
+    .footer-conteneur {
+        flex-direction: column;
+    }
+
+    .footer-conteneur-colonne {
+        width: 100%;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .footer-conteneur-colonne-titre {
+        margin: 0;
+    }
+    .footer-conteneur-colonne:first-child {
+        margin-top: 0;
+    }
+    .footer-conteneur-colonne:last-child {
+        margin-bottom: 0;
+    }
+}
 
 
-   
