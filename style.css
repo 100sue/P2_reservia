@@ -85,7 +85,6 @@ a {
     .header-nav-lien {
         padding: 1rem;
     }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -165,7 +164,6 @@ a {
     display: none;
 }
 
-
  /*filtres*/
 
 .filtres {
@@ -221,6 +219,7 @@ a {
     transform: scale(1.05);
     cursor: pointer;
 }
+
 
 .info {
     display: flex;
@@ -332,7 +331,6 @@ a {
     border-radius: 1rem;  
 }
 
-
 .liste-appartements {
     display: flex;
     justify-content: space-between;
@@ -380,6 +378,12 @@ a {
 .hebergement-suite-lien {
     margin: 15px 30px 15px 20px;
     font-weight: bold;
+}
+
+/*animation au survol des cartes*/
+
+.carte-appartement:hover {
+    transform: scale(1.05);
 }
 
 /*couleur des étoiles*/
@@ -472,6 +476,11 @@ a {
     margin-bottom: 0.5rem;
 }
 
+/*animation au survol des cartes*/
+
+.carte-appartement-populaire:hover {
+    transform: scale(1.05);
+}
 
 
 @media screen and (max-width: 550px) {
@@ -558,11 +567,11 @@ a {
     display: flex; 
     justify-content: space-between; 
 }
+
 .activites-titre {
     margin-top: 0.5rem;
     margin-right: 0.5rem;
 }
-
 
 .activites-marseille-grand {
     height: 500px;
@@ -608,6 +617,11 @@ a {
     padding: 0.5rem;  
 }
 
+/*animation au survol des cartes*/
+
+.carte-activite:hover {
+    transform: scale(1.05);
+}
 
 
 @media screen and (max-width: 750px) {
@@ -647,7 +661,7 @@ a {
         display: flex;
         max-width: 100%;
         width: 100%;
-        margin-left: 2rem;
+        margin-left: 1rem;
         box-sizing: border-box;
 }
 
