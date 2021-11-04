@@ -444,6 +444,7 @@ a {
 .carte-appartement-populaire img {
     height: 130px;
     width: 40%;
+    min-width: 40%;
     border-radius: 1rem 0 0 1rem;
     margin-right: 0.5rem;
     object-fit: cover;
