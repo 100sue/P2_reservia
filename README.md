@@ -52,5 +52,5 @@ Le code doit-être versionné avec git et doit avoir un repo distant sur Github 
 
 <br>
 
-Accès au projet : https://100sue.github.io/P2_reservia/
+Accès au projet : https://100sue.github.io/RolandAPPERT_2_05092021/
 
