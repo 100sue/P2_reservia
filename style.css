@@ -212,7 +212,6 @@ a {
     margin: 0 1rem;
 }
 
-
 /*animation au survol des filtres*/
 
 .varieté-filtres-titre:hover {
@@ -221,6 +220,7 @@ a {
     cursor: pointer;
 }
 
+/*info*/
 
 .info {
     display: flex;
