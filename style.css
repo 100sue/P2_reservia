@@ -666,7 +666,6 @@ a {
 .footer-conteneur {
         display: flex;
         max-width: 100%;
-        width: 100%;
         margin-left: 1rem;
         box-sizing: border-box;
 }
