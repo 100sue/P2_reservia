@@ -1,4 +1,4 @@
-# Projet Openclassrooms, Projet 2 : Reservia # <br>
+# Projet Openclassrooms, Projet 2 : Reservia # 
 Deuxième projet du parcours de développeur web chez OpenClassrooms.<br>
 L'objectif est d'intégrer la maquette d'un site de recherche et de planification de vacances nommé "Reservia".<br>
 <br>
