@@ -13,8 +13,10 @@ L'objectif est d'intégrer la maquette d'un site de recherche et de planificatio
 
 (Maquette, ci-dessous)
 
-<img width="432" alt="reservia" src="https://user-images.githubusercontent.com/90606431/136689066-5b6d4144-c507-4b99-823d-7f473aeeb7bd.png">
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/90606431/136689066-5b6d4144-c507-4b99-823d-7f473aeeb7bd.png"/>
+</p>
 
 <strong>Scénario :</strong><br>
 
