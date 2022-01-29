@@ -53,3 +53,10 @@ Aucune maquette pour la résolution tablette n'est fournie, cependant l'intégra
 
 Accès au projet : https://100sue.github.io/RolandAPPERT_2_05092021/
 
+<br>
+
+  <p align="center">
+<img src= "https://user-images.githubusercontent.com/90606431/151660985-c0a30670-7d3b-4b86-89fe-566e96a15e79.jpg" />
+</p>
+
+
