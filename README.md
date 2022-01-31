@@ -1,3 +1,8 @@
+<p align="center">
+<img src= "https://user-images.githubusercontent.com/90606431/151769677-b99dbf89-68f6-46b6-9f01-ace009ae7202.jpg" />
+</p>
+
+
 # Projet Openclassrooms, Projet 2 : Reservia # 
 Deuxième projet du parcours de développeur web chez OpenClassrooms.<br>
 L'objectif est d'intégrer la maquette d'un site de recherche et de planification de vacances nommé "Reservia".<br>
